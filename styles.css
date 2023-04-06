@@ -89,16 +89,19 @@ body {
   margin-bottom: 5px;
 }
 .bottom_section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap:25px;
   
 }
 .contact_me {
   background-color: rgb(82, 82, 78);
+  border-radius: 10px;
 }
 .about_me {
   background-color: rgb(102, 36, 35);
+  border-radius: 10px;
 }
 
 .contact_me,
@@ -155,7 +158,7 @@ body {
     font-size: 32px;
   }
   .bottom_section {
-    flex-direction: column;
+    grid-template-columns:1fr;
     gap:10px;
   }
   h1 {
