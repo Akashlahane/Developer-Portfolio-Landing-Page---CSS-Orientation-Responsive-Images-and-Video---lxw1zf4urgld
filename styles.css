@@ -8,7 +8,7 @@
     font-family: sans-serif;
     transition: all 0.2s linear;
     scroll-behavior: smooth;
-    transition: 1s;
+    transition: 2s;
 }
 
 :root{
@@ -155,7 +155,7 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color: #eee;
     padding: 2rem;
-    /*overflow: hidden;*/
+    overflow: hidden;
     width: 80%;
  }
 
@@ -388,6 +388,9 @@ header .navbar ul li a:hover{
     color: var(--green);
  }
 
+ 
+
+ 
 
 
   @media (max-width: 1200px) {
@@ -402,17 +405,45 @@ header .navbar ul li a:hover{
   }
 
 
-  @media (max-width: 700px) {
+  @media (max-width: 720px) {
     html{
         font-size: 50%;
     }
+
+    header .user img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: 0.7rem solid var(--green);
+        
+    }
     
-     header{
-       left: -120%;*
-     }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0px;
+        right: 0px;
+        width: 100vw;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 500;
+    }
+
+
+
+    .active{
+        display: none;
+        transition: 1s;
+    }
+
+    
+     
 
      #menu{
         display: block;
+        font-size: 50px;
      }
 
      header .toggle{
@@ -426,13 +457,11 @@ header .navbar ul li a:hover{
 
 
 
-  @media (max-width: 400px) {
-
+ /* @media (max-width: 400px) {
 
     .home p{
         max-width: 500px;
     }
-
      header{
         width: 100vw;
         left: 0;
@@ -458,7 +487,7 @@ header .navbar ul li a:hover{
      .contact row form{
         margin: 3rem;
      }
-  }
+  }*/
 
 
 
